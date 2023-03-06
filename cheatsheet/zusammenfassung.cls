@@ -21,6 +21,7 @@
 % SOFTWARE.
 
 % Author: % Micha Bosshart - bmicha@ethz.ch
+% Modified: % Christian Leser - cleser@ethz.ch
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cheatsheet}[2020/09/14 LaTeX class for cheatsheets by Micha Bosshart]
