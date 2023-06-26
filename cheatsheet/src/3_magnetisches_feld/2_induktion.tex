@@ -20,16 +20,21 @@
     \end{minipage}
     
     \centering \underline{\textbf{Induktionsgesetz}}\\
-    \begin{minipage}{0.49\linewidth}
-        \mathbox{U_i = -n_i \frac{d\Phi}{dt}}
+    \begin{minipage}{0.44\linewidth}
+        \begin{empheq}[box = \fbox]{align*}
+            U_i &= -n_i \frac{d\Phi}{dt}\\
+            &= -n_i\frac{d}{dt} \left( \overrightarrow{B} \overrightarrow{A} \right)
+        \end{empheq}
     \end{minipage}
-    \begin{minipage}{0.49\linewidth}
+    \begin{minipage}{0.54\linewidth}
         \begin{scriptsize}
             Minus wegen Lenzscher Regel
             \begin{empheq}{align*}
                 U_i &= \text{Spannung in der Spule i}\\
                 n_i &= \text{Windungen der Spule i}\\
                 \Phi &= \text{Mag. Fluss}\\
+                B &= \text{mag. Flussdichte}\\
+                A &= \text{Querschnittsfläche Spule, normal zu Fläche}
             \end{empheq}
         \end{scriptsize}
     \end{minipage}
@@ -37,3 +42,9 @@
     \centering \underline{\textbf{Induktionsspule}}\\
     \mathbox{\int U_i dt = \alpha \int \overrightarrow{H} \cdot \overrightarrow{ds}, \alpha = \mu_0 \frac{n_i}{L} A_i}
     Geschlossener Weg: \mathbox{\oint \overrightarrow{H} \cdot \overrightarrow{ds} = \int \overrightarrow{j} \overrightarrow{dA} = I \cdot n}
+
+    \subsubsection{Leiterschleife mit verschiebbarem Bügel}
+        \includegraphics[width = \linewidth]{src/images/leiterschleife_bügel_verschiebbar.png}
+        \mathbox{d\overrightarrow{A} = d\overrightarrow{s} \times \overrightarrow{l} \rightarrow \frac{d \overrightarrow{A}}{dt} = \overrightarrow{v} \times \overrightarrow{l}}
+        Induktionsgesetz:
+        \mathbox{U_i = -\frac{d}{dt} \left( \overrightarrow{B} \overrightarrow{A} \right) = \left(\overrightarrow{v} \times \overrightarrow{B} \right) \overrightarrow{l} - \overrightarrow{A} \frac{d \overrightarrow{B}}{dt}}

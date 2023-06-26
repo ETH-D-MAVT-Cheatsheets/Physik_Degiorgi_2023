@@ -4,5 +4,8 @@
     \mathbox{U_0 = U_R(t) + U_L(t)}
 
     mit $U_R(t) = R I(t)$ und $U_L(t) = L \frac{dI(t)}{dt}$ und geteilt durch $L$
-    DGL der Stromstärke und ihre Lösung:
-    \mathbox{\dot{I}(t) + \frac{R}{L} I(t) = \frac{U_0}{L}, I(t) = \frac{U_0}{R} \left(1 - e^{-\frac{R}{L}t}\right)}
+    DGL der Stromstärke und ihre Lösung:\\
+    Einschalten:
+    \mathbox{\dot{I}(t) + \frac{R}{L} I(t) = \frac{U_0}{L}, I(t) = \frac{U_0}{R} \left(1 - e^{-\frac{R}{L}(t - t_0)}\right)}
+    Ausschalten ($U_0 = 0$):
+    \mathbox{I(t) = \frac{U_0}{R} \left(e^{-\frac{R}{L}(t - t_0)}\right)}
