@@ -1,6 +1,20 @@
 \subsection*{3.6 Biot-Savart Gesetz}
-    Einfluss der magnetischen Wirkung eines stromdurchflossenen, beliebig geformten Mediums auf einen Punkt
-    \mathbox{\overrightarrow{B} = \frac{\mu_0}{4 \pi} \int \frac{I \overrightarrow{dl} \times \overrightarrow{l_r}}{r^2}}
+    Magnetische Wirkung eines Abschnittes eines elektrischen Leiters $\overrightarrow{dl}$ auf einen Punkt im Abstand $\left|\overrightarrow{r}\right|$   
+    \mathbox{\overrightarrow{B} = \frac{\mu_0}{4 \pi} \int \frac{I \overrightarrow{dl} \times \hat{r}}{r^2}}
 
-    Magnetfeld in Spule:
-    \mathbox{B = \mu_0 I \frac{N}{l}}
+    \subsubsection{Magnetfeld gerader Draht}
+    \begin{minipage}{0.39\linewidth}
+        \includegraphics[width = \linewidth]{src/images/magnetfeld_draht.png}
+    \end{minipage}
+    \begin{minipage}{0.59\linewidth}
+        \begin{empheq}[box = \fbox]{align*}
+            \overrightarrow{B} &= \frac{\mu_0}{4 \pi} I \int\limits_{-\infty}^{+\infty} \frac{dx \cdot |\hat{r}| \cdot \sin{\vartheta}}{r^2}\\
+            &= \frac{\mu_0}{4 \pi} I \int\limits_{-\frac{\pi}{2}}^{+\frac{\pi}{2}} \frac{\cos{\varphi}}{R} d\varphi
+        \end{empheq}
+    \end{minipage}
+    \begin{scriptsize}
+        \begin{align*}
+            \sin(\vartheta) = \frac{R}{r} = \cos(\varphi) \quad &\mid \quad r = \frac{R}{\cos(\varphi)}\\
+            x = R \tan(\varphi) \quad &\mid \quad dx = \frac{R}{\cos^2(\varphi)} d\varphi
+        \end{align*}
+    \end{scriptsize}

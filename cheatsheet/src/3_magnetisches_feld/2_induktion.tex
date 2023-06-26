@@ -1,23 +1,39 @@
 \subsection*{3.2 elektromagnetische Induktion}
-    Strom in Spule wird durch Änderung des magnetischen Feldes erzeugt.
-    Spannungsstoss
-    \mathbox{S_U = \int U_i dt}
-    $ S_u \sim \Delta H, S_u \sim n_i, S_u \sim A_i$
+    \centering \underline{\textbf{Spannungsstoss $S_U$}}\\
+    Änderung des magnetischen Feldes erzeugt Strom in Spule
+    \begin{minipage}{0.49\linewidth}
+        \begin{empheq}[box = \fbox]{align*}
+            S_U &= \int U_i dt\\
+            &= \mu n_i \Delta H A_i
+        \end{empheq}  
+    \end{minipage}
+    \begin{minipage}{0.49\linewidth}
+        \begin{scriptsize}
+            \begin{empheq}{align*}
+                \mu &= \mu_0 \cdot \mu_r = \text{Mag. Permeabilität}\\
+                U_i &= \text{Spannung in der Spule i}\\
+                n_i &= \text{Windungen der Spule i}\\
+                H &= \text{Mag. Feldstärke}\\
+                A_i &= \text{Querschnittsfläche der Spule i}\\
+            \end{empheq}
+        \end{scriptsize}
+    \end{minipage}
     
-    % Zusammenhang für zwei Spulen verständlicher machen
+    \centering \underline{\textbf{Induktionsgesetz}}\\
+    \begin{minipage}{0.49\linewidth}
+        \mathbox{U_i = -n_i \frac{d\Phi}{dt}}
+    \end{minipage}
+    \begin{minipage}{0.49\linewidth}
+        \begin{scriptsize}
+            Minus wegen Lenzscher Regel
+            \begin{empheq}{align*}
+                U_i &= \text{Spannung in der Spule i}\\
+                n_i &= \text{Windungen der Spule i}\\
+                \Phi &= \text{Mag. Fluss}\\
+            \end{empheq}
+        \end{scriptsize}
+    \end{minipage}
 
-    \mathbox{\int U_i = \mu_0 n_i \Delta H A_i}
-    $\mu_0$ magnetische Permabilität des Vakuums (siehe Basics)\\
-    Wenn eine kleinere Spule $S_2$ in einer Grösseren $S_1$ liegt: 
-    \mathbox{U_{\text{ind}} = - N_2 A_2 \mu_0 \frac{\Delta I}{\Delta t} \frac{N_1}{l_1}}
-
-    magnetischer Fluss $\Phi$, magnetische Flussdichte $B$:
-    \mathbox{\Phi = \mu_0 A H \rightarrow B = \frac{\Phi}{A} = \mu_0 H \rightarrow d \Phi = B dA}
-    \mathbox{\overrightarrow{B} = \mu_0 \overrightarrow{H}}
-    \mathbox{\Phi = \int \overrightarrow{B} \overrightarrow{dA}}
-    
-    Induktionsgesetz (das Minus entsteht durch die Lenzsche Regel bzw. das Wehren entgegen der zeitlichen Änderung):
-    \mathbox{U_i = - n \frac{d\Phi}{dt}}
-
-    Induktionsspule: \mathbox{\int U_i dt = \alpha \int \overrightarrow{H} \cdot \overrightarrow{ds}, \alpha = \mu_0 \frac{N}{L} A}
-    Geschlossener Weg: \mathbox{\oint \overrightarrow{H} \cdot \overrightarrow{ds} = \int \overrightarrow{j} \overrightarrow{dA} = I \cdot n} Stromstärke mal Anzahl Windungen
+    \centering \underline{\textbf{Induktionsspule}}\\
+    \mathbox{\int U_i dt = \alpha \int \overrightarrow{H} \cdot \overrightarrow{ds}, \alpha = \mu_0 \frac{n_i}{L} A_i}
+    Geschlossener Weg: \mathbox{\oint \overrightarrow{H} \cdot \overrightarrow{ds} = \int \overrightarrow{j} \overrightarrow{dA} = I \cdot n}
