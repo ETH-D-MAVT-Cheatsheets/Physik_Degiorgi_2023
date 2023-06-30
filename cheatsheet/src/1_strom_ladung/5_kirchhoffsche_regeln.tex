@@ -5,25 +5,22 @@
         \begin{footnotesize}
             \begin{center}
                 \vspace{2mm}
-                \includegraphics[width = 30mm]{src/images/knotenregel.png}
+                \includegraphics[width = 20mm]{src/images/knotenregel.png}
             \end{center}
         \end{footnotesize}
     \end{minipage}
     \begin{minipage}{0.5\linewidth}
         \begin{scriptsize}
             \begin{center}
-                \mathbox{
-                    \sum\limits_k I_k = 0
-                }
-                \mathbox{
-                    \sum\limits_k Q_k = 0
-                }
+                \begin{align*}
+                    \text{Widerstände:} \; &\sum\limits_k I_k = 0\\
+                    \text{Kondensatoren:} \; &\sum\limits_k Q_k = 0
+                \end{align*}
+                \colorbox{Goldenrod}{$\sum I_\text{zufliessend}$} $=$ \colorbox{Apricot}{$\sum I_\text{abfliessend}$} 
             \end{center}
         \end{scriptsize}
     \end{minipage}
     \vspace{1mm}
-    \hfill \colorbox{Goldenrod}{$\sum I_\text{zufliessend}$} $=$ \colorbox{Apricot}{$\sum I_\text{abfliessend}$} 
-
 
     \subsubsection*{Maschenregel}
     \vspace{-1mm}
@@ -31,27 +28,26 @@
         \begin{footnotesize}
             \begin{center}
                 \vspace{2mm}
-                \includegraphics[width = 30mm]{src/images/maschenregel.png}
+                \includegraphics[width = 20mm]{src/images/maschenregel.png}
             \end{center}
         \end{footnotesize}
     \end{minipage}
     \begin{minipage}{0.5\linewidth}
         \begin{scriptsize}
             \begin{center}
-                \mathbox{
-                    \sum\limits_{i} U_{i} = \sum\limits_k R_k I_k 
-                }
-                \mathbox{
-                    \sum\limits_{i} U_{i} = \sum\limits_k \frac{Q_k}{C_k} 
-                }
+                \begin{align*}
+                    \text{Widerstände:} \; &\sum\limits_{i} U_{i} = \sum\limits_k R_k I_k \\
+                    \text{Kondensatoren:} \; &\sum\limits_{i} U_{i} = \sum\limits_k \frac{Q_k}{C_k} 
+                \end{align*}
                 $i =$ \# Spannungsquellen\\
                 $k =$ \# Spannungsabfälle
             \end{center}
+            \vspace{1mm}
+            \hfill \colorbox{YellowGreen}{$\sum U_\text{Quelle}$} $=$ \colorbox{Yellow}{$\sum U_\text{Abfälle}$} 
         \end{scriptsize}
     \end{minipage}
-    \vspace{1mm}
-    \hfill \colorbox{YellowGreen}{$\sum U_\text{Spannungsquelle}$} $=$ \colorbox{Yellow}{$\sum U_\text{Spannungsabfälle}$} 
-
-    (1) Zeichne \colorbox{YellowGreen}{$\overrightarrow{U_{sq}}$}an der Spannungsquelle ein (minus nach plus)
-    \\(2) Wähle Stromrichtung \colorbox{Cyan}{$\overrightarrow{I}$} (gegen $U_{sq}$)
-    \\(3) Trage \colorbox{Yellow}{$\overrightarrow{U_R}$} an Widerständen (ein gleich wie Stromrichtung)
+    \begin{scriptsize}
+        (1) Zeichne \colorbox{YellowGreen}{$\vec{U}_{sq}$}an der Spannungsquelle ein (minus nach plus)
+        \\(2) Wähle Stromrichtung \colorbox{Cyan}{$\vec{I}$} (gegen $U_{sq}$)
+        \\(3) Trage \colorbox{Yellow}{$\vec{U}_R$} an Widerständen (ein gleich wie Stromrichtung)
+    \end{scriptsize}
