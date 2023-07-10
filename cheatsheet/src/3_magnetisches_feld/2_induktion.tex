@@ -23,7 +23,7 @@
     \begin{minipage}{0.44\linewidth}
         \begin{empheq}[box = \fbox]{align*}
             U_i &= -n_i \frac{d\Phi}{dt}\\
-            &= -n_i\frac{d}{dt} \left( \vec{B} \vec{A} \right)
+            &= \underbrace{-n_i\frac{d}{dt} \left( \vec{B} \vec{A} \right)}_{\text{falls $\vec{B}$ homogen auf$A$}}
         \end{empheq}
     \end{minipage}
     \begin{minipage}{0.54\linewidth}
@@ -47,4 +47,7 @@
         \includegraphics[width = \linewidth]{src/images/leiterschleife_bügel_verschiebbar.png}
         \mathbox{d\vec{A} = d\vec{s} \times \vec{l} \rightarrow \frac{d \vec{A}}{dt} = \vec{v} \times \vec{l}}
         Induktionsgesetz:
-        \mathbox{U_i = -\frac{d}{dt} \left( \vec{B} \vec{A} \right) = \left(\vec{v} \times \vec{B} \right) \vec{l} - \vec{A} \frac{d \vec{B}}{dt}}
+        \begin{empheq}[box = \fbox]{align*}
+            U_i &= -\frac{d}{dt} \int \vec{B} d\vec{A} = -\frac{d}{dt} \left( \vec{B} \vec{A} \right)\\
+            &= \left(\vec{v} \times \vec{B} \right) \vec{l} - \vec{A} \frac{d \vec{B}}{dt}
+        \end{empheq}
