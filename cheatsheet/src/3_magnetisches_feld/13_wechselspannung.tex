@@ -1,0 +1,33 @@
+\subsection{Wechselspannung}
+    Dynamo (Wechselspannung durch sich drehende Schleife in homogenem Magnetfeld):
+    \mathbox{U_i = \omega B_0 A_0 sin(\omega t) = U_0 sin(\omega t)}
+
+
+    Spule: Phasenverschiebung 
+    \mathbox{U_L = L \frac{dI}{dt}}
+
+    Kondensator: Phasenverschiebung
+    \mathbox{U_C = \frac{1}{C} \int I(t) dt}
+
+    Impedanz:
+
+    \mathbox{Z_{\text{tot}} = \sum_i Z_i, \frac{1}{Z_{\text{tot}}} = \sum_i \frac{}{Z_i}}
+
+    Leistung in komplexer Schreibweise ($\rho = $ Phasenverschiebung):
+    \mathbox{\frac{1}{2} I_0 U_0 cos(\rho)}
+    \begin{align*}
+        \parbox{4cm}{\textbf{Komplexe Schreibweise:}}\\
+        \overset{\sim}{I}(t) = I_0 e^{i \omega t}, \quad \overset{\sim}{U} &= \overset{\sim}{Z} \cdot \overset{\sim}{I} = I_0 Z \cdot e^{i \omega t} e^{i \phi}
+        \\[0.5em]
+        \parbox{4cm}{\textbf{Impedanz Spule:}}\\
+        \overset{\sim}{Z}_S = R + i \omega L &= \sqrt{R^2 + \omega^2 L ^2} \cdot e^{i \phi}\\
+        \text{Phasenverschiebung:} \; U(t) &\sim I(t + \frac{\pi}{2})
+        \\[0.5em]
+        \parbox{4cm}{\textbf{Impedanz Kondensator:}}\\
+        \overset{\sim}{Z}_C = - i\frac{1}{\omega C} &= \frac{1}{\omega C} \cdot e^{i \phi}\\
+        \text{Phasenverschiebung:} \; U(t) &\sim I(t - \frac{\pi}{2})
+        \\[0.5em]
+        \parbox{4cm}{\textbf{Impedanz Widerstand:}}\\
+        \overset{\sim}{Z}_R = R &= R \cdot e^{i \phi}\\
+        \text{Phasenverschiebung:} \; U(t) &\sim I(t)
+    \end{align*}

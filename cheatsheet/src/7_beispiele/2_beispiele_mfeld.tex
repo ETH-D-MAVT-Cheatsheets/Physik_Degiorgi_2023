@@ -1,32 +1,15 @@
-\subsection*{3.5 Lorenzkraft $\vec{F_L}$}
-    \begin{minipage}{0.49\linewidth}
+\subsection{Beispiele Magnetisches Feld}
+    \subsubsection{Leiterschleife mit verschiebbarem Bügel}
+        ACHTUNG: Richtung der eingeführten Vektoren im Rechtssystem\\
+        $\vec{l}$ in Richtung des Elektronenflusses
+        \includegraphics[width = \linewidth]{src/images/leiterschleife_bügel_verschiebbar.png}
+        \mathbox{d\vec{A} = d\vec{s} \times \vec{l} \rightarrow \frac{d \vec{A}}{dt} = \vec{v} \times \vec{l}}
+        Induktionsgesetz:
         \begin{empheq}[box = \fbox]{align*}
-            \vec{F_L} &= I (\vec{l} \times \vec{B})\\
-            &= \int \vec{j} \times \vec{B} dV\\
-            &= \int \rho (\vec{v} \times \vec{B}) dV\\
-            &= q (\vec{v} \times \vec{B})
+            U_i &= -\frac{d}{dt} \int \vec{B} d\vec{A} = -\frac{d}{dt} \left( \vec{B} \vec{A} \right)\\
+            &= \left(\vec{v} \times \vec{B} \right) \vec{l} - \vec{A} \frac{d \vec{B}}{dt}
         \end{empheq}
-        \includegraphics[width = \linewidth]{src/images/rechte_hand_lorenz.png}
-    \end{minipage}
-    \begin{minipage}{0.49\linewidth}
-        \begin{scriptsize}
-            \begin{empheq}{align*}
-                l = &\text{Länge stromdurchflossener}\\
-                &\text{Leiter in Magnetfeld}\\
-                A = &\text{Querschnittsfläche Leiter}\\
-                V = &A \cdot l = \text{Volumen Leiter}\\
-                j = &\frac{I}{A} = \text{Flächenstromdichte}\\
-                \rho = &\text{Volumenladungsdichte}\\
-                \vec{B} = &\text{Magnetfeld}\\
-                I = &\rho A v = \text{el. Strom}\\
-                v = &\text{Geschwindigkeit der Ladungen}\\
-                q = &\text{Ladung !Vorzeichen!}
-            \end{empheq}
-            \linebreak
-            ACHTUNG: Elektronenfluss in entgegengesetzte Richtung zu Fluss des technischen Stroms
-        \end{scriptsize}
-    \end{minipage}        
-%
+    
     \subsubsection{Beispiel Elektromotor}
         \begin{minipage}{0.54\linewidth}
             \begin{empheq}[box = \fbox]{align*}
@@ -47,7 +30,7 @@
             \includegraphics[width = \linewidth]{src/images/leiterschleife.png}
         \end{minipage}
 %
-    \subsubsection*{Beispiel parallele stromdurchflossene Drähte}
+    \subsubsection{Beispiel parallele stromdurchflossene Drähte}
         \begin{minipage}{0.49\linewidth}
             \includegraphics*[width = \linewidth]{src/images/magnetische_wirkung_draehte.png}
         \end{minipage}
@@ -59,4 +42,4 @@
             \mathbox{F_1 = F_2 = \frac{\mu_0}{2 \pi} l \frac{I_1 I_2}{r}}
         \end{minipage}
 %
-    \subsubsection*{Beispiel Leiterschleife verschiebbarer Bügel}
+    \subsubsection{Beispiel Leiterschleife verschiebbarer Bügel}
