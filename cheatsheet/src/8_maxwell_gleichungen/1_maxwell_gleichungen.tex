@@ -1,17 +1,18 @@
-\begin{align*}
-    \parbox{3.5cm}{\textbf{Gauss'sches Gesetz $\vec{E}$}}\\
-    \vec{\nabla}\vec{E}(\vec{r}) &= \frac{\rho{\vec{r}}}{\varepsilon_0}\\
-    \int_{\partial V} \vec{E}(\vec{r}) d \vec{A} &= \frac{1}{\varepsilon_0} \int_V \rho(\vec{r}) dV
-    \\[0.5em]
-    \parbox{3.5cm}{\textbf{Gauss'sches Gesetz $\vec{B}$}}\\
-    \vec{\nabla}\vec{B}(\vec{r}) &= 0\\
-    \int_{\partial V} \vec{E}(\vec{r}) d \vec{A} &= 0
-    \\[0.5em]
-    \parbox{3.5cm}{\textbf{Induktionsgesetz}}\\
-    \vec{\nabla} \times \vec{E}(\vec{r},t) &= - \frac{\partial \vec{B}(\vec{r},t)}{\partial t}\\
-    U_\text{ind} = \oint_L \vec{E}_\text{ind}(\vec{r}) d \vec{L} &= - \frac{d}{dt} \int_A \vec{B}(\vec{r}) d \vec{A}
-    \\[0.5em]
-    \parbox{3.5cm}{\textbf{Induktionsgesetz}}\\
-    \vec{\nabla} \times \vec{B}(\vec{r}) &= \mu_0 \vec{j}(\vec{r}) + \mu_0 \varepsilon_0 \frac{\partial \vec{E}(\vec{r})}{\partial t}\\
-    \oint_L \vec{B}(\vec{r}) d \vec{L} &= \mu_0 \int_A \vec{j}(\vec{r}) d \vec{A}
-\end{align*}
+\subsection{Maxwell Gleichungen}
+    \begin{align*}
+        \parbox{3.5cm}{\textbf{Gauss'sches Gesetz $\vec{E}$}}\\
+        \vec{\nabla}\vec{E}(\vec{r}) &= \frac{\rho{\vec{r}}}{\varepsilon_0}\\
+        \int_{\partial V} \vec{E}(\vec{r}) d \vec{A} &= \frac{1}{\varepsilon_0} \int_V \rho(\vec{r}) dV
+        \\[0.5em]
+        \parbox{3.5cm}{\textbf{Gauss'sches Gesetz $\vec{B}$}}\\
+        \vec{\nabla}\vec{B}(\vec{r}) &= 0\\
+        \oint_{\partial V} \vec{B}(\vec{r}) d \vec{A} &= 0
+        \\[0.5em]
+        \parbox{3.5cm}{\textbf{Induktionsgesetz}}\\
+        \vec{\nabla} \times \vec{E}(\vec{r},t) &= - \frac{\partial \vec{B}(\vec{r},t)}{\partial t}\\
+        U_\text{ind} = \oint_L \vec{E}_\text{ind}(\vec{r}) d \vec{L} &= - \frac{d}{dt} \int_A \vec{B}(\vec{r}) d \vec{A}
+        \\[0.5em]
+        \parbox{3.5cm}{\textbf{Durchflutungsgesetz}}\\
+        \vec{\nabla} \times \vec{B}(\vec{r}) &= \mu_0 \vec{j}(\vec{r}) + \mu_0 \varepsilon_0 \frac{\partial \vec{E}(\vec{r})}{\partial t}\\
+        \oint_L \vec{B}(\vec{r}) d \vec{L} &= \mu_0 \int_A \vec{j}(\vec{r}) d \vec{A}
+    \end{align*}
