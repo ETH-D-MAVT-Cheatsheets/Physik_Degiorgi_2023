@@ -20,13 +20,14 @@
     \end{minipage}
     
     \centering \underline{\textbf{Induktionsgesetz}}\\ \label{Induktionsgesetz}
-    \begin{minipage}{0.44\linewidth}
+    \begin{minipage}{0.58\linewidth}
         \begin{empheq}[box = \fbox]{align*}
             U_i &= -n_i \frac{d\Phi}{dt}\\
-            &= \underbrace{-n_i\frac{d}{dt} \left( \vec{B} \vec{A} \right)}_{\text{falls $\vec{B}$ homogen auf$A$}}
+            &= \underbrace{-n_i \frac{d}{dt} \iint \vec{B}\vec{dA}}_{\text{$\vec{B}$ hom. auf $A$ und $\vec{B} \| {dA}$,}}\\
+            &= -n_i B A
         \end{empheq}
     \end{minipage}
-    \begin{minipage}{0.54\linewidth}
+    \begin{minipage}{0.40\linewidth}
         \begin{scriptsize}
             Minus wegen Lenzscher Regel
             \begin{empheq}{align*}
@@ -34,7 +35,8 @@
                 n_i &= \text{Windungen der Spule i}\\
                 \Phi &= \text{Mag. Fluss}\\
                 B &= \text{mag. Flussdichte}\\
-                A &= \text{Querschnittsfläche Spule, normal zu Fläche}
+                A &= \text{Querschnittsfläche Spule,}\\ 
+                &\text{normal zu Fläche}
             \end{empheq}
         \end{scriptsize}
     \end{minipage}
