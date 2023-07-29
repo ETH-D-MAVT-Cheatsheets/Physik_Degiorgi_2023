@@ -1,0 +1,120 @@
+\subsection{Wechselstrom/Wechselspannung}    
+    \begin{minipage}{0.49\linewidth}
+        \centering \underline{\textbf{Gleichstrom}}\\
+        \begin{empheq}[box = \fbox]{align*}
+           I &= \frac{U}{R}
+        \end{empheq}  
+        \includegraphics*[width = \linewidth]{src/images/Gleichstrom.png}
+    \end{minipage}
+    \begin{minipage}{0.49\linewidth}
+        \centering \underline{\textbf{Wechselstrom}}\\
+        \begin{empheq}[box = \fbox]{align*}
+            U &= U_0 \cdot \cos{\omega t}\\
+            I &= \frac{U_0}{R}\cdot \cos{\omega t}
+        \end{empheq} 
+        \includegraphics*[width = \linewidth]{src/images/Wechselstrom.png}
+    \end{minipage}
+    \vfill \null \columnbreak
+
+\subsection{Effektivwert}
+    \begin{flushleft}
+        Der Effektivwert ist jener Wert, der ein Gleichstrom haben müsste um die gleiche Leistung zu erzielen.\\      
+    \end{flushleft}
+
+    \begin{minipage}{0.49\linewidth}
+        \centering \underline{\textbf{Sinus/Cosinuswellen}}\\
+        \begin{empheq}[box = \fbox]{align*}
+            P_\text{eff} &= \frac{1}{2} U_0 \cdot I_0\\
+            \\
+            U_\text{eff} &= \frac{1}{\sqrt{2}} \cdot U_0\\
+            I_\text{eff} &= \frac{1}{\sqrt{2}} \cdot I_0
+        \end{empheq} 
+ 
+    \end{minipage}
+    \begin{minipage}{0.49\linewidth}
+        \centering \underline{\textbf{Allgemein}}\\
+        \begin{empheq}[box = \fbox]{align*}
+            P_\text{eff} &= \frac{1}{T} \int_{0}^{T}P dt \\
+            \\
+            U_\text{eff} &= \sqrt{\frac{1}{T} \int_{0}^{T} U^2 dt}
+        \end{empheq} 
+ 
+    \end{minipage}
+    \includegraphics*[width = \linewidth]{src/images/Effektivwert.png}
+
+\subsection{Wechselstrom und komplexe Zahlen}
+    \begin{empheq}[box = \fbox]{align*}
+        U(t) = U_0 \cos(\omega t+\varphi) &= U_0e^{j(\omega+\varphi)} &= U_0e^{j\omega} \cdot e^{\varphi}\\
+        I(t) = I_0 \cos(\omega t+\varphi) &= I_0e^{j(\omega+\varphi)} &= I_0e^{j\omega} \cdot e^{\varphi}
+    \end{empheq}
+
+\subsection{Schein, Wirk und Blindleistung}
+    \begin{minipage}{0.49\linewidth}
+        \centering \underline{\textbf{Scheinleistung:}}\\
+        \begin{empheq}[box = \fbox]{align*}
+           S & = U_\text{eff} \cdot I_\text{eff}
+        \end{empheq}
+        \centering \underline{\textbf{Wirkleistung:}}\\
+        \begin{empheq}[box = \fbox]{align*}
+           P & = S \cdot \cos(\varphi)
+        \end{empheq} 
+        \centering \underline{\textbf{Blindleistung:}}\\
+        \begin{empheq}[box = \fbox]{align*}
+           Q & = S \cdot \sin(\varphi)
+        \end{empheq}
+
+    \end{minipage}
+    \begin{minipage}{0.49\linewidth}
+        \includegraphics*[width = \linewidth]{src/images/Scheinleistung.png}
+        \includegraphics*[width = \linewidth]{src/images/Wirkleistung.png}
+
+
+        \begin{empheq}[box = \fbox]{align*}
+           S^2 = P^2 + Q^2
+        \end{empheq} 
+
+    \end{minipage}
+    \vfill \null \columnbreak
+
+\subsection{Impedanz/Blindwiderstände}
+    \begin{minipage}{0.40\linewidth}
+        \begin{empheq}[box = \fbox]{align*}
+        U(t) &= U_0e^{j \omega t +\varphi_1}\\
+        I(t) &= I_0e^{j \omega t +\varphi_2}
+        \end{empheq} 
+    \end{minipage}
+    \begin{minipage}{0.58\linewidth}
+        \begin{empheq}[box = \fbox]{align*}
+        U &= R \cdot I\\
+        U(t) &= Z \cdot I(t)
+        \end{empheq} 
+    \end{minipage}
+    \begin{empheq}[box = \fbox]{align*}
+        \text{Widerstand: } Z_R &= R\\
+        \text{Kondensator: } Z_C &= -j\frac{1}{\omega L}\\
+        \text{Spule: } Z_L &= j \omega L
+    \end{empheq}
+
+    \begin{minipage}{0.58\linewidth}
+        \begin{empheq}[box = \fbox]{align*}
+        U &= R \cdot I\\
+        U(t) &= Z \cdot I(t)
+        \end{empheq} 
+    \end{minipage}
+    
+    \begin{minipage}{0.49\linewidth}
+        \centering \underline{\textbf{Serie}}\\
+        \includegraphics*[width=\linewidth]{src/images/Impedanz_Serie.png}
+        \begin{empheq}[box = \fbox]{align*}
+           Z &= R -j\frac{1}{\omega L} + j \omega L
+        \end{empheq}  
+    \end{minipage}
+    \begin{minipage}{0.49\linewidth}
+        \centering \underline{\textbf{Parallel}}\\
+        \includegraphics*[width=\linewidth]{src/images/Impedanz_Parallel.png}
+        \begin{empheq}[box = \fbox]{align*}
+            \frac{1}{Z} &= \frac{1}{R} - \frac{1}{j\frac{1}{\omega L}} + \frac{1}{j \omega L}
+        \end{empheq} 
+    \end{minipage}
+
+

@@ -1,9 +1,27 @@
 \subsection{Biot-Savart Gesetz}
-    Magnetische Wirkung eines Abschnittes eines elektrischen Leiters $\vec{dl}$ auf einen Punkt im Abstand $\left|\vec{r}\right|$   
-    \mathbox{\vec{B} = \frac{\mu_0}{4 \pi} \int \frac{I \vec{dl} \times \hat{r}}{r^2}}
+    Magnetische Wirkung eines Abschnittes eines elektrischen Leiters $\vec{dl}$ auf einen Punkt im Abstand $\left|\vec{r}\right|$ \\ 
+        \begin{minipage}{0.7\linewidth}
+            \begin{empheq}[box = \fbox]{align*}
+                \vec{B} &= \frac{\mu_0}{4 \pi} \int \frac{I \vec{dl} \times \hat{r}}{r^2}\\
+                &= \frac{\mu_0}{4 \pi} \iiint_V d\vec{l}\times \frac{\vec{r}-\vec{r'}}{{\vert \vec{r}-\vec{r'}\vert}^3}
+            \end{empheq}
+        \end{minipage}\\
+        \vspace*{2mm}
 
-    \vfill \null \columnbreak
+        \begin{minipage}{0.5\linewidth}
+            \includegraphics[width = \linewidth]{src/images/BiotSavard.png}
+        \end{minipage}
+        \begin{minipage}{0.48\linewidth}
+            Vorgehen:\\
+            \begin{scriptsize}
+                (1) $\vec{r},\vec{r'},\vec{dl}$ finden/ definieren
+                \\(2) Einsetzen und vereinfachen
+                \\(3) Integtal berechnen
+            \end{scriptsize}  
+        \end{minipage}
+        \includegraphics[width = \linewidth]{src/images/BiotSavard_bsp.png}
 
+        \vfill \null \columnbreak
     \subsubsection{Magnetfeld gerader Draht}
         \begin{minipage}{0.39\linewidth}
             \includegraphics[width = \linewidth]{src/images/magnetfeld_draht.png}
