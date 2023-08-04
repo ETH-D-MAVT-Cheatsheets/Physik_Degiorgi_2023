@@ -1,13 +1,13 @@
 \subsection{elektromagnetische Induktion}
     \centering \underline{\textbf{Spannungsstoss $S_U$}}\\
     Änderung des magnetischen Feldes erzeugt Strom in Spule
-    \begin{minipage}{0.49\linewidth}
+    \begin{minipage}{0.44\linewidth}
         \begin{empheq}[box = \fbox]{align*}
             S_U &= \int U_i dt\\
             &= \mu n_i \Delta H A_i
         \end{empheq}  
     \end{minipage}
-    \begin{minipage}{0.49\linewidth}
+    \begin{minipage}{0.54\linewidth}
         \begin{scriptsize}
             \begin{empheq}{align*}
                 \mu &= \mu_0 \cdot \mu_r = \text{Mag. Permeabilität}\\
@@ -31,7 +31,7 @@
         \begin{scriptsize}
             Minus wegen Lenzscher Regel
             \begin{empheq}{align*}
-                U_i &= \text{Spannung in der Spule i}\\
+                U_i &= \text{Induzierte Spannung in Spule}\\
                 n_i &= \text{Windungen der Spule i}\\
                 \Phi &= \text{Mag. Fluss}\\
                 B &= \text{mag. Flussdichte}\\
@@ -42,5 +42,24 @@
     \end{minipage}
 
     \centering \underline{\textbf{Induktionsspule}}\\
-    \mathbox{\int U_i dt = \alpha \int \vec{H} \cdot \vec{ds}, \alpha = \mu_0 \frac{n_i}{L} A_i}
-    Geschlossener Weg: \mathbox{\oint \vec{H} \cdot \vec{ds} = \int \vec{j} \vec{dA} = I \cdot n}
+    \begin{minipage}{0.44\linewidth}
+        \begin{empheq}[box = \fbox]{align*}
+            \int U_i dt &= \alpha \int \vec{H} \cdot \vec{ds}\\
+            \alpha &= \mu \frac{n_i}{l} A_i\\
+            B &= \frac{L I}{n A}
+        \end{empheq}
+    \end{minipage}
+    \begin{minipage}{0.54\linewidth}
+        \begin{scriptsize}
+            \begin{empheq}{align*}
+                U_i &= \text{Spannung in der Spule i}\\
+                \vec{H} &= \\
+                \mu &= \mu_0 \cdot \mu_r = \text{Mag. Permeabilität}\\
+                n_i &= \text{Windungen der Spule i}\\
+                l &= \text{Länge der Spule}\\
+                B &= \text{mag. Flussdichte}\\
+                L &= \text{Induktivität}
+                A &= \text{Querschnittsfläche Spule, normal zu Fläche}
+            \end{empheq}
+        \end{scriptsize}
+    \end{minipage}
