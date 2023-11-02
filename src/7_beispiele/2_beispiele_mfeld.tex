@@ -1,0 +1,105 @@
+\subsection{Beispiele Magnetisches Feld}
+    \subsubsection{Leiterschleife mit verschiebbarem Bügel}
+        ACHTUNG: Richtung der eingeführten Vektoren im Rechtssystem\\
+        $\vec{l}$ in Richtung des Elektronenflusses
+        \includegraphics[width = \linewidth]{src/images/leiterschleife_bügel_verschiebbar.png}
+        \mathbox{d\vec{A} = d\vec{s} \times \vec{l} \rightarrow \frac{d \vec{A}}{dt} = \vec{v} \times \vec{l}}
+        Induktionsgesetz:
+        \begin{empheq}[box = \fbox]{align*}
+            U_i &= -\frac{d}{dt} \int \vec{B} d\vec{A} = -\frac{d}{dt} \left( \vec{B} \vec{A} \right)\\
+            &= \left(\vec{v} \times \vec{B} \right) \vec{l} - \vec{A} \frac{d \vec{B}}{dt}
+        \end{empheq}
+
+    \subsubsection{Feldstärke eines geradlinigen Leiters}
+        \begin{minipage}{0.34\linewidth}
+            \includegraphics[width = \linewidth]{src/images/mag-feld_gerader_leiter.png}
+        \end{minipage}
+        \begin{minipage}{0.64\linewidth}
+            Durchflutungsgesetz führt zu:
+            \begin{empheq}[box = \fbox]{align*}
+                \text{In Leiter: } H(r) &= \frac{I}{2 \pi} \frac{r}{R^2}\\
+                \text{Um Leiter: } H(r) &= \frac{I}{2 \pi r}
+            \end{empheq}
+            \begin{scriptsize}
+                \begin{empheq}{align*}
+                    H &= \text{mag. Feldstärke}\\
+                    I &= \text{el. Strom}\\
+                    R &= \text{Radius des el. Leiters}\\
+                \end{empheq}
+            \end{scriptsize}
+        \end{minipage}
+    
+    \subsubsection{Magnetfeld gerader Draht}
+        {\centering Aus \ref{sec_biot_savart} Biot-Savart Gesetz \par}
+            \begin{minipage}{0.39\linewidth}
+                \includegraphics[width = \linewidth]{src/images/magnetfeld_draht.png}
+            \end{minipage}
+            \begin{minipage}{0.59\linewidth}
+                \begin{empheq}[box = \fbox]{align*}
+                    \vec{B} &= \frac{\mu_0}{4 \pi} I \int\limits_{-\infty}^{+\infty} \frac{dx \cdot |\hat{r}| \cdot \sin{\vartheta}}{r^2}\\
+                    &= \frac{\mu_0}{4 \pi} I \int\limits_{-\frac{\pi}{2}}^{+\frac{\pi}{2}} \frac{\cos{\varphi}}{R} d\varphi
+                \end{empheq}
+            \end{minipage}
+            \begin{scriptsize}
+                \begin{align*}
+                    \sin(\vartheta) = \frac{R}{r} = \cos(\varphi) \quad &\mid \quad r = \frac{R}{\cos(\varphi)}\\
+                    x = R \tan(\varphi) \quad &\mid \quad dx = \frac{R}{\cos^2(\varphi)} d\varphi
+                \end{align*}
+            \end{scriptsize}
+    
+    \vfill \null \columnbreak
+
+    \subsubsection{Beispiel Elektromotor}
+        \begin{minipage}{0.54\linewidth}
+            \begin{empheq}[box = \fbox]{align*}
+                M &= I (\vec{A} \times \vec{B})\\
+                M_{\text{dip}} &= \vec{m} \times \vec{B}\\
+                W &= -\int M_{\text{dip}} d\alpha = \vec{m} \vec{B}
+            \end{empheq}
+            \begin{scriptsize}
+                \begin{empheq}{align*}
+                    \vec{A} &= \text{Vektor normal zu Fläche}\\
+                    \vec{B} &= \text{mag. Flussdichte}\\
+                    \vec{m} &= \text{mag. Dipolmoment}\\
+                \end{empheq}
+            \end{scriptsize}
+        \end{minipage}
+        \begin{minipage}{0.44\linewidth}
+            "Kommutator" kehrt Polarisierung des Stroms nach halber Umdrehungen um, damit volle Umdrehung ermöglicht wird.
+            \includegraphics[width = \linewidth]{src/images/leiterschleife.png}
+        \end{minipage}
+
+    \subsubsection{Beispiel Transformator}
+        \begin{minipage}{0.49\linewidth}
+            \includegraphics[width = \linewidth]{src/images/transformator.png}
+        \end{minipage}
+        \begin{minipage}{0.49\linewidth}
+            \mathbox{\left| \frac{U_p}{U_s} \right| = \frac{n_p}{n_s}}
+            \begin{scriptsize}
+                \begin{align*}
+                    p &= \text{Primärspule}\\
+                    s &= \text{Sekundärspule}\\
+                    U &= \text{el. Spannung}\\
+                    n &= \text{Windungen}
+                \end{align*}
+            \end{scriptsize}
+        \end{minipage}
+%
+    \subsubsection{Beispiel parallele stromdurchflossene Drähte}
+        \begin{minipage}{0.49\linewidth}
+            \includegraphics*[width = 0.8\linewidth]{src/images/magnetische_wirkung_draehte.png}
+        \end{minipage}
+        \begin{minipage}{0.49\linewidth}
+            \begin{itemize}
+                \item $\vec{I_1} \uparrow \uparrow \vec{I_2}$: anziehend
+                \item $\vec{I_1} \uparrow \downarrow \vec{I_2}$: abstossend
+            \end{itemize}
+            \mathbox{F_1 = F_2 = \frac{\mu_0}{2 \pi} l \frac{I_1 I_2}{r}}
+        \end{minipage}
+
+    \subsubsection{Dynamo}
+        Dynamo (Wechselspannung durch sich drehende Schleife in homogenem Magnetfeld):
+        \mathbox{U_i = \omega B_0 A_0 sin(\omega t) = U_0 sin(\omega t)}
+
+        \subsubsection{Induzierte Spannung}
+        \includegraphics*[width=\linewidth]{src/images/Bsp_induktion_v_aus_abl.png}
