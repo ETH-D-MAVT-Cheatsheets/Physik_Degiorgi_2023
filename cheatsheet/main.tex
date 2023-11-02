@@ -4,9 +4,10 @@
 \usepackage{empheq}
 \usepackage{pbox}
 \usepackage{booktabs}
+\usepackage{tikz}
 
 \doctitle{Physik Zusammenfassung}
-\author{Noa Sendlhofer, Christian Leser \\\& Gian Maria Ernst \\ nsendlhofer, cleser \& ernstg \\ \vspace*{-0.2em}}
+\author{Christian Leser \& Noa Sendlhofer \\ cleser \& nsendlhofer \\ \vspace*{-0.2em}}
 
 % Noch hinzufügen:
 % Mechanische Arbeit: \int\limits_{t_1}^{t_2} P(t) dt
@@ -19,6 +20,7 @@
     \input{src/1_strom_ladung/3_elektrischer_widerstand.tex}
     \input{src/1_strom_ladung/4_kapazitaet.tex}
     \input{src/1_strom_ladung/5_kirchhoffsche_regeln.tex}
+    \vfill \null \columnbreak
     \input{src/1_strom_ladung/6_schaltkreis.tex}
     \input{src/1_strom_ladung/7_strom_spannungsteiler.tex}
     \vfill \null \columnbreak
@@ -42,43 +44,39 @@
     \input{src/3_magnetisches_feld/6_induktion.tex}
     \input{src/3_magnetisches_feld/6_1_selbstinduktion.tex}
     \input{src/3_magnetisches_feld/6_2_gegeninduktion.tex}
+    \vfill \null \columnbreak
     \input{src/3_magnetisches_feld/7_lenzsche_regel.tex}
     \input{src/3_magnetisches_feld/8_durchflutungsgesetz.tex}
     \input{src/3_magnetisches_feld/9_lorenzkraft.tex}
     \input{src/3_magnetisches_feld/10_biot_savart.tex}
     \input{src/3_magnetisches_feld/11_kraft_arbeit.tex}
+    \vfill \null \columnbreak
     \input{src/8_maxwell_gleichungen/1_maxwell_gleichungen.tex}
-    \vfill \null \columnbreak
     \input{src/3_magnetisches_feld/12_magnetismus_materie.tex}
-    \input{src/3_magnetisches_feld/13_wechselspannung.tex}
     \vfill \null \columnbreak
-    \input{src/3_magnetisches_feld/14_wechselstrom_spannung.tex}
+    \input{src/3_magnetisches_feld/13_wechselspannung.tex}
 
 \section{Elektromagnetische Wellen}
-    \input{src/4_elektromagnetische_wellen/1_herzscher_dipol.tex}
-    \input{src/4_elektromagnetische_wellen/2_wellengleichung.tex} 
-    \input{src/4_elektromagnetische_wellen/3_poynting_vektor.tex}
-    \input{src/4_elektromagnetische_wellen/4_wellen.tex}
+    \input{src/4_elektromagnetische_wellen/1_wellen.tex}
+    \input{src/4_elektromagnetische_wellen/2_herzscher_dipol.tex}
+    \input{src/4_elektromagnetische_wellen/3_wellengleichung.tex} 
+    \input{src/4_elektromagnetische_wellen/4_energie_el_mag_feld.tex}
     \input{src/4_elektromagnetische_wellen/5_doppler.tex}
+    \input{src/4_elektromagnetische_wellen/6_DGL_harmonische_schwingung.tex}
     \newpage
-
-\section{Appendix}
-    \input{src/5_appendix/1_lrkreis.tex}
-    \input{src/5_appendix/2_energie_kraft.tex}
-    \vfill \null \columnbreak
 
 \section{Variabeln und Konstanten}
     \input{src/6_variabeln_und_konstanten/1_variablen.tex}
     \input{src/6_variabeln_und_konstanten/2_einheiten.tex}
     \vfill \null \columnbreak
-
     \input{src/6_variabeln_und_konstanten/3_konstanten.tex}
-    \input{src/6_variabeln_und_konstanten/4_exponentialgesetze.tex}
+    \input{src/6_variabeln_und_konstanten/4_nutzlich.tex}
     \input{src/6_variabeln_und_konstanten/5_vorsilben.tex}
     \newpage
 
-\section{Beispiele}
-    \input{src/7_beispiele/1_beispiele_efeld.tex}
-    \vfill \null \columnbreak
-    \input{src/7_beispiele/2_beispiele_mfeld.tex}
+%\section{Beispiele}
+%    \input{src/7_beispiele/1_beispiele_efeld.tex}
+%    \vfill \null \columnbreak
+%    \input{src/7_beispiele/2_beispiele_mfeld.tex}
+%    \input{src/7_beispiele/3_beispiele_e_m_feld.tex}
 \end{document}

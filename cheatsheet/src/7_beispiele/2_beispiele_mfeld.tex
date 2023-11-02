@@ -29,6 +29,26 @@
             \end{scriptsize}
         \end{minipage}
     
+    \subsubsection{Magnetfeld gerader Draht}
+        {\centering Aus \ref{sec_biot_savart} Biot-Savart Gesetz \par}
+            \begin{minipage}{0.39\linewidth}
+                \includegraphics[width = \linewidth]{src/images/magnetfeld_draht.png}
+            \end{minipage}
+            \begin{minipage}{0.59\linewidth}
+                \begin{empheq}[box = \fbox]{align*}
+                    \vec{B} &= \frac{\mu_0}{4 \pi} I \int\limits_{-\infty}^{+\infty} \frac{dx \cdot |\hat{r}| \cdot \sin{\vartheta}}{r^2}\\
+                    &= \frac{\mu_0}{4 \pi} I \int\limits_{-\frac{\pi}{2}}^{+\frac{\pi}{2}} \frac{\cos{\varphi}}{R} d\varphi
+                \end{empheq}
+            \end{minipage}
+            \begin{scriptsize}
+                \begin{align*}
+                    \sin(\vartheta) = \frac{R}{r} = \cos(\varphi) \quad &\mid \quad r = \frac{R}{\cos(\varphi)}\\
+                    x = R \tan(\varphi) \quad &\mid \quad dx = \frac{R}{\cos^2(\varphi)} d\varphi
+                \end{align*}
+            \end{scriptsize}
+    
+    \vfill \null \columnbreak
+
     \subsubsection{Beispiel Elektromotor}
         \begin{minipage}{0.54\linewidth}
             \begin{empheq}[box = \fbox]{align*}
@@ -67,7 +87,7 @@
 %
     \subsubsection{Beispiel parallele stromdurchflossene Drähte}
         \begin{minipage}{0.49\linewidth}
-            \includegraphics*[width = \linewidth]{src/images/magnetische_wirkung_draehte.png}
+            \includegraphics*[width = 0.8\linewidth]{src/images/magnetische_wirkung_draehte.png}
         \end{minipage}
         \begin{minipage}{0.49\linewidth}
             \begin{itemize}
